@@ -1,0 +1,36 @@
+//rock paper scissors game
+
+var userInput = 'Rock';
+userInput = userinput.toLowerCase();
+function getComputerChoice() {
+  Math.floor(Math.random()*3);
+  switch(randomNumber) {
+    case 0:
+      return 'rock';
+      break;
+    case 1:
+      return 'paper';
+      break;
+    case 3:
+      return 'scissors';
+      break;
+  }
+}
+function determineWinner(userChoice, ComputerChoice) {
+  if (userChoice === computerChoice) {
+  return 'it\'s a tie';
+    
+  } if (userChoice === 'rock') {    
+    if (computerChoice === 'paper') {
+    return 'computer wins';
+    } else {
+      return 'you win!';
+    }
+  } if (userChoice === 'paper') {
+    if (computerChoice === 'scissors') {
+      return 'computer wins';
+    } else {
+      return 'you win!'
+    }
+  }
+  }
