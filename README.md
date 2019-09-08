@@ -1,0 +1,2 @@
+# CodecademyExos-js
+Codecademy exercises
