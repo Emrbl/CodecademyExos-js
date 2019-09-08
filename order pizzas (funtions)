@@ -1,0 +1,14 @@
+var orderCount = 0
+function takeOrder(topping, crustType) {
+  console.log('Order: ' + crustType + ' crust topped with ' + topping);
+  orderCount = (orderCount + 1)
+}
+takeOrder('bacon', 'thin')
+takeOrder('mushrooms', 'cheesy')
+takeOrder('mozzarella', 'gluten free');
+
+//price per pizza 7.5€
+function getSubTotal(itemCount) {
+return itemCount * 7.5
+}
+console.log(getSubTotal(orderCount))
